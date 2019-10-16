@@ -32,7 +32,7 @@
                 myWindow2 = window.open("https://9967han.github.io/windowOpenTest/first.html", "_blank", "width= " + 100 + ", height=" + 100);
                 if (myWindow2.document.readyState == "complete") {
                     var direction = "left";
-                    wgear.callback.exec(success, fail, 'Win32Util', 'MoveForegroundWindowToAnotherScreenByKey', [direction, false]);
+                    wgear.callback.exec(success, fail, 'Win32Util', 'MoveForegroundWindowToAnotherScreenByKey', [direction, true]);
                     document.getElementById("spanTag").innerHTML = "\n" + myWindow2.screen.width + " " + myWindow2.screen.height;
                 }
             };
