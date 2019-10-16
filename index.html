@@ -20,12 +20,12 @@
             function GetIP() {
                 wgear.callback.exec(success, fail, 'Win32Util', 'GetScreenInfo', []);
                 
-                wgear.promise.exec('Win32Util','GetIPAddress', [])
-                .then(function(r) {
-                    console.log("result : ", r);
-                },function(e){
-                    console.log("error : ", e);
-                });
+                //wgear.promise.exec('Win32Util','GetIPAddress', [])
+                //.then(function(r) {
+                //    console.log("result : ", r);
+                //},function(e){
+                //    console.log("error : ", e);
+                //});
             };
 
             window.onload = function() {
