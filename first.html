@@ -23,7 +23,9 @@
 </body>
 <script>
 window.onload = function() {
-	window.opener.window.eventListener();
+	setTimeout(function() {
+	  window.opener.window.eventListener();
+	}, 1000);
 }
 
 function button5_click() {
